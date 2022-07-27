@@ -1,0 +1,130 @@
+  * {  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Poppins";
+    font-size: 16px;
+  }
+  .container {
+    background-image: url(/images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    border: 2px solid;
+    width: 80%;
+    height: 80vh;
+    margin: 5em auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  header {
+    width: 45%;
+  }
+  h1 {
+    color: white;
+    font-weight: 700px;
+    font-size: 60px;
+  }
+  header p {
+    color: white;
+    font-weight: 700px;
+  }
+  .offer {
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 1em;
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+    border-radius: 7px;
+  }
+  .offer span {
+    font-weight: 600;
+  }
+  main {
+    width: 35%;
+  }
+  form {
+    padding: 15px;
+    background-color: white;
+    border-radius: 7px;
+  }
+  fieldset {
+    border: none;
+  }
+  label {
+    display: block;
+    padding: 9px;
+    text-align: center;
+    border: 1px solid hsl(246, 25%, 77%);
+    margin: 0.8em;
+    border-radius: 7px;
+  }
+  input {
+    padding: 17px;
+    width: 95%;
+    border: none;
+    outline: none;
+  }
+  button {
+    padding: 25px;
+    width: 96%;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    border-radius: 7px;
+    border: none;
+  }
+  .button {
+    text-align: center;
+  }
+  .button a {
+    font-weight: 500px;
+  }
+  button:active {
+    background-color: hsl(154, 76%, 50%);
+  }
+  input::placeholder {
+    font-weight: 700;
+  }
+  .TnC {
+    font-size: x-small;
+    text-align: center;
+    padding-top: 15px;
+    color: hsl(246, 25%, 77%);
+    font-weight: 300;
+  }
+  .TnC span {
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+  }
+  
+  /*Media Query Starts Here*/
+  
+  @media (max-width: 375px) {
+    .container {
+      background-image: url(/images/bg-intro-mobile.png);
+      height: 80%;
+      flex-direction: column;
+    }
+    header {
+      width: 65%;
+      text-align: center;
+    }
+    h1 {
+      color: white;
+      font-weight: 700px;
+      font-size: 19px;
+      margin-bottom: 1em;
+    }
+    header p {
+      font-size: 10px;
+      margin-bottom: 1em;
+    }
+    .offer {
+        padding: 10px;
+    }
+    main {
+      width: 90%;
+      height: 80vh;
+    }
+  }   
